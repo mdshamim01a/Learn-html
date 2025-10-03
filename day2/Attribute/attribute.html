@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+</head>
+<body>
+
+    HTML में attribute वो अतिरिक्त जानकारी होती है जो किसी HTML tag को और ज़्यादा अर्थ देती है। Attribute हमेशा start tag (opening tag) के अंदर लिखे जाते हैं और ये आमतौर पर name="value" के रूप में होते हैं।
+
+Basic Syntax:
+<tagname attribute="value">Content</tagname>
+
+    
+    <!-- id और class -->
+    <h1 id="main-title" class="heading">Welcome to HTML Attributes</h1>
+
+    <!-- href और target -->
+    <a href="https://google.com" target="_blank" title="Go to Google">Open Google</a>
+    <br><br>
+
+    <!-- src, alt, width, height -->
+    <img src="pic.jpg" alt="Sample Image" width="200" height="150">
+    <br><br>
+
+    <!-- form elements -->
+    <form action="submit.php" method="post">
+
+        <!-- name, placeholder, required, maxlength -->
+        <input type="text" name="username" placeholder="Enter your name" maxlength="15" required>
+        <br><br>
+
+        <!-- value, readonly -->
+        <input type="text" value="Read Only Text" readonly>
+        <br><br>
+
+        <!-- disabled -->
+        <input type="text" value="Disabled Field"Disabled >
+        <br><br>
+
+        <!-- checkbox checked -->
+        <label><input type="checkbox" name="subscribe" checked> Subscribe</label>
+        <br><br>
+
+        <!-- radio button checked -->
+        <label><input type="radio" name="gender" value="male" checked> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <br><br>
+
+        <!-- select option selected -->
+        <select name="country">
+            <option value="india" selected>India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+
+        <!-- button -->
+        <input type="submit" value="Submit Form">
+
+    </form>
+  <br>
+
+  <!-- video with autoplay, controls, loop -->
+  <video src="sample.mp4" width="300" controls autoplay loop></video>
+</body>
+</html>

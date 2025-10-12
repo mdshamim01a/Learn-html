@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    Action attribute
+    <!-- input me ham text,password,number,date,time,search,submit etc sara add kr sakte hain -->
+    <br><br><br>
+    <form action="/action.php"></form>
+    <form action="/action">
+        Username
+        <input type="text"/>
+        <br>
+        Password
+        <input type="password">
+    </form>
+    <br><br><br><hr>
+
+
+    placeholder&labels 
+    <!-- input box ke under show hota hain username ya password kuch bhi usme dikha skte hain -->
+    <br><br><br>
+    <form action="/action">
+        Username
+        <input type="text" placeholder="enter username">
+        <br/>
+        Password
+        <input type="password" placeholder="enter password">
+        <br><br><hr>
+    </form>
+    Label
+    <!-- label element represents a caption for an item in a user interface -->
+    <form action="/action">
+        <label>
+            <br><br><br>
+            Username
+            <input type="text" placeholder="enter username">
+        </label>
+        <br>
+        <label>
+            Password
+            <input type="password" placeholder="enter password">
+        </label>
+    </form>
+    <hr>
+    label id,for
+    <br><br><br>
+    <!-- label ko id dene ke liye -->
+     <form action="/action">
+        <div>
+            <label for="username">Username :</label>
+            <input type="text" placeholder="enter username" id="username">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password :</label>
+            <input type="password" placeholder="enter password" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="age">Ener Age :</label>
+            <input type="number" placeholder="age" id="age">
+        </div>
+     </form>
+
+</body>
+</html>

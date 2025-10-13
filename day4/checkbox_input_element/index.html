@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+</head>
+<body>
+    <form action="/server">
+        <input type="checkbox" name="age" id="age" checked>
+        <label for="age">I am 18+</label>
+        <button>submit</button>
+    </form>
+    <hr><br><br>
+    <!-- radio button -->
+    <form action="/server">
+        <div>
+            <input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" name="fruit" id="mango" value="mango">
+            <label for="mango">Mango</label>
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">Banana</label>
+        </div>
+        <br><br>
+        <div>
+            Choose your subjects:
+            <input type="checkbox" name="sub" id="math" value="math">
+            <label for="math">mathematics</label>
+            <input type="checkbox" name="sub" id="phy" value="phy">
+            <label for="phy">physics</label>
+            <input type="checkbox" name="sub" id="chem" value="chem">
+            <label for="chem">chemistry</label>
+            <input type="checkbox" name="sub" id="eng" value="eng">
+            <label for="eng">english</label>
+            <input type="checkbox" name="sub" id="urd" value="urd">
+            <label for="urd">urdu</label>
+        </div>
+        
+        <br><br><hr><br><br>
+        <div>
+            Choose your profession
+            <select name="profession" id="profession">
+                <option value="">select your option</option>
+                <option value="stu" selected>Student</option>
+                <option value="dev">Developer</option>
+                <option value="tea">Teacher</option>
+                <option value="far">Farmer</option>
+                <option value="oth">Other</option>
+            </select>
+        </div>
+        <br><br>
+        <label for="vol">Select Your Volume Level</label>
+        <input type="range"
+        id="vol"
+        min="0"
+        max="100"
+        name="vol"
+        step="10"
+        value="70">
+        <!-- text area or feedback -->
+        <label for="feedback">Please give your valuable feedback :</label>
+        <textarea name="feedback" placeholder="Write your feedback here" id="feedback"></textarea>
+        <button>submit</button>
+    </form>
+</body>
+</html>
